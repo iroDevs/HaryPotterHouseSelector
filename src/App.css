@@ -4,6 +4,8 @@
    box-sizing: border-box;
  }
 
+ 
+
 /*      Home   */
  .Home {
    width: 100%;
@@ -109,4 +111,16 @@
    background-color: rgba(255, 0, 0, 0) ;
    color: white;
    width: 120px;
+ }
+
+  .btn-transparent:hover {
+   background-color: rgb(255, 255, 255) ;
+   color: rgb(0, 0, 0);
+   width: 120px;
+ }
+
+
+ .btn-transparent a{  
+   text-decoration: none;
+   color: white ;
  }
