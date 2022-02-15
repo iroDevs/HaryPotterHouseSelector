@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
+ * {
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*      Home   */
+ .Home {
+   width: 100%;
+   height: 100vh;
+   color: white;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+   background: linear-gradient(45deg,rgb(0, 0, 0),rgb(1, 44, 12));
+  background-size:200% 200%;
+  animation: colors 5s ease infinite;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .Home h1 {
+   margin: 20px ;
+   font-size: 40pt;
+   color: rgb(255, 255, 255);
+ }
+
+  .Home div {
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   text-align: center;
+ }
+
+ .Home nav {
+  align-self: flex-end;
+ }
+ .Home nav ul {
+    list-style: none;
+  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .Home nav ul li {
+    margin: 20px;
+    color: rgb(167, 167, 167);
+    padding: 20px;
+    border: 1px solid rgba(167, 167, 167, 0);
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .Home nav ul li:hover {
+    border: 1px solid rgb(167,167,167);
+    cursor: pointer;
+ }
+
+ @keyframes colors {
+     0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    background-position: 100% 50%;
   }
-}
+
+  100% {
+    background-position: 0% 50%;
+  }
+ }
+
+ /****************/
+
+ .btn-transparent {
+   background-color: rgba(255, 0, 0, 0) ;
+   color: white;
+   width: 120px;
+ }
